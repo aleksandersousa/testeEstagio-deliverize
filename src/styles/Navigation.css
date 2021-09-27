@@ -1,0 +1,56 @@
+.navigation {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25vw 3.125vw;
+
+  background: #F4F4F4;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.navigation__icon {
+  display: none;
+}
+
+.logo {
+  width: 17.59vw;
+  height: 3.75%;
+}
+
+@media only screen and (max-width: 480px) {
+  .navigation {
+    height: 56px;
+
+    justify-content: space-between;
+
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15));
+  }
+
+  .logo {
+    width: 150.15px;
+    height: 32px;
+  }
+
+  .navigation__icon {
+    display: block;
+  }
+
+  .back-icon {
+    width: 24px;
+    height: 24px;
+
+    color: #686868;
+  }
+
+  .reorder-icon {
+    width: 24px;
+    height: 24px;
+
+    color: #686868;
+  }
+}

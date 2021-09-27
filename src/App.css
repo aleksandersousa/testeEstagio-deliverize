@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('./assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url('./assets/fonts/Roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('./assets/fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Condensed Regular';
+  src: url('./assets/fonts/Roboto-Condensed/RobotoCondensed-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Condensed Bold';
+  src: url('./assets/fonts/Roboto-Condensed/RobotoCondensed-Bold.ttf');
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+
+  background: #FFFFFF;
+}
+
+:root {
+  --font-regular: 'Roboto Regular', 'sans-serif';
+  --font-medium: 'Roboto Medium', 'sans-serif';
+  --font-bold: 'Roboto Bold', 'sans-serif';
+  --font-condensed-regular: 'Roboto Regular', 'sans-serif';
+  --font-condensed-bold: 'Roboto Condensed Bold', 'sans-serif';
+  --font-size: 1.09375vw; 
+  --line-height: 2.025316456vh;
+
+  --icons-size: 1.875vw;
+
+  --color-red-deliverize: #D80000;
+  --color-fonts1: #4E4E4E;
+  --color-fonts2: #656363;
+}

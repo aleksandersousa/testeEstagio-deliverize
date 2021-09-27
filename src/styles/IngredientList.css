@@ -1,0 +1,84 @@
+.ingredient-list::-webkit-scrollbar {
+  display: none;
+}
+
+.ingredient-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
+  overflow-y: scroll;
+  scrollbar-width: none;
+
+  width: 29.296875vw;
+}
+
+.ingredient-list__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ingredient-list__container {
+  width: 29.296875vw;
+  height: 3.866432vw;
+  margin-top: 0.5623vw;
+
+  background: rgba(253, 215, 14, 0.2);
+}
+
+.ingredient-list__title {
+  position: relative;
+  font-family: var(--font-medium);
+  font-size: 14px;
+  line-height: 16px;
+
+  top: 0.56239vw;
+  margin-left: 1.25vw;
+  margin-right: 1.25vw;
+
+  color: #4E4E4E;
+}
+
+.checkbox {
+  width: 29.296875vw;
+  height: 4.850615114vw;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-top: 1.687170475vw;
+  margin-left: 1.25vw;
+  margin-bottom: 1.687170475vw;
+}
+
+@media only screen and (max-width: 480px) {
+  .ingredient-list {
+    width: 91.466666667vw;
+    overflow: hidden;
+  }
+
+  .ingredient-list__footer {
+    margin-top: 8px;
+  }
+
+  .ingredient-list__container {
+    width: 91.466666667vw;
+    height: 55px;
+  }
+
+  .ingredient-list__title {
+    top: 8px;
+    margin-left: 14.63px;
+  }
+
+  .checkbox {
+    width: 91.466666667vw;
+    height: 56px;
+    top: 8px;
+    margin-bottom: 48px;
+  }
+}

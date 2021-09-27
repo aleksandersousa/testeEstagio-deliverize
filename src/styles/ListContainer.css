@@ -1,0 +1,239 @@
+.list-container {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.875vw;
+  padding: 32px;
+
+  width: 34.2968vw;
+  height: calc(107vh - 24px);
+
+  border: 1px solid #686868;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.list-container__header {
+  width: 29.296875vw;
+  height: 55px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  background: rgba(253, 215, 14, 0.2);
+}
+
+.list-container__title {
+  margin-top: 0.5623vw;
+  margin-left: 1.25vw;
+  margin-right: 1.25vw;
+  font-family: var(--font-medium);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+
+  color: #4E4E4E;
+}
+
+.list-container__description {
+  margin-left: 1.25vw;
+  margin-right: 1.25vw;
+  margin-bottom: 0.28115vw;
+  
+  font-family: var(--font-regular);
+  font-size: 0.9375vw;
+  line-height: var(--line-height);
+
+  color: #E49700;
+}
+
+.list-container__footer {
+  width: 29.296875vw;
+  height: 2.81195vw;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.button {
+  width: 17.109375vw;
+  height: 2.81195vw;
+  margin-top: 12px;
+  margin-left: 16px;
+
+  color: #FFFFFF;
+
+  background: #F09035;
+  border-radius: 4px;
+  border: none;
+
+  outline: none;
+}
+
+.list-container__footer .item-count {
+  width: 10.9375vw;
+  height: 2.81195vw;
+  margin-top: 12px;
+
+  font-family: var(--font-medium);
+  line-height: 10px;
+  letter-spacing: 0.33px;
+}
+
+.list-container__title {
+  font-family: var(--font-condensed-bold);
+  font-size: var(--font-size);
+  line-height: 100%;
+  color: #BC2E31;
+}
+
+.popover {
+  width: 208px;
+  height: auto;
+}
+
+.popover:after, .popover:before {
+  bottom: 100%;
+  border: solid transparent;
+  content: ' ';
+  width: 16px;
+  height: 8px;
+  position: absolute;
+  pointer-events: none;
+}
+
+.popover:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #F09035;
+  border-width: 8px;
+  left: 50%;
+  margin-left: -8px;
+}
+
+.arrow_box:before {
+  border-color: rgba(113, 158, 206, 0);
+  border-bottom-color: #F09035;
+  border-width: 8px;
+  left: 50%;
+  margin-left: -8px;
+}
+
+.popover__header {
+  font-family: var(--font-condensed-bold);
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+
+  color: #FFFFFF;
+
+  background-color: #F09035 !important;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.popover__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 !important;
+
+  background: #F8F8F8;
+  border-radius: 0px 0px 4px 4px;
+
+  font-family: var(--font-condensed-bold);
+  font-size: 12px;
+  line-height: 100%;
+  color: #4E4E4E;
+}
+
+.popover__title {
+  font-family: var(--font-condensed-bold);
+  font-size: var(--font-size);
+  line-height: 100%;
+  color: #BC2E31;
+  margin-top: 8px;
+  margin-left: 11px;
+}
+
+.popover__list {
+  font-family: var(--font-condensed-regular);
+  font-size: 12px;
+  line-height: 100%;
+
+  padding-left: 30px !important;
+
+  color: #4E4E4E;
+}
+
+li:not(:last-child) {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 0px !important;
+}
+
+.popover__list-title {
+  font-family: var(--font-condensed-regular);
+  font-size: 12px;
+  line-height: 100%;
+
+  margin-top: 8px;
+  margin-left: 11px;
+  margin-bottom: 0;
+
+  color: #4E4E4E;
+}
+
+@media only screen and (max-width: 1200px) {
+  .popover {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .list-container {
+    position: static;
+    border: none;
+    box-sizing: unset;
+    border-radius: 0px;
+    
+    width: 91.466666667vw;
+    height: auto;
+    margin: 112px 16px 16px 16px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .list-container__header {
+    width: 91.466666667vw;
+  }
+
+  .list-container__title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .list-container__description {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .list-container__footer {
+    width: 91.466666667vw;
+  }
+
+  .list-container__footer .item-count {
+    width: 37.333333333vw;
+    height: 40px;
+  }
+
+ .button {
+    width: 52vw;
+    height: 40px;
+  }
+
+  .list-container__title {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 6vw;
+
+  background-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 480px) {
+  .main {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 56px;
+  }
+}

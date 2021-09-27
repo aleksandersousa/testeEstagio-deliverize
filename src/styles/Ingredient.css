@@ -1,0 +1,84 @@
+.ingredient {
+  width: 28.076875vw;
+  height: 6.25659vw;
+
+  margin-top: 16px;
+  margin-left: 13px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ingredient__body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  height: inherit;
+}
+
+.ingredient__line {
+  width: 26.796875vw;
+  height: 0px;
+  border: 1px solid #E8A634;
+}
+
+.ingredient__description {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ingredient__name {
+  font-family: var(--font-medium);
+  font-size: 1.09375vw;
+  line-height: 2.025316456vh;
+
+  color: var(--color-fonts1);
+}
+
+.ingredient__price {
+  font-family: var(--font-regular);
+  font-size: 1.09375vw;
+  line-height: 2.025316456vh;
+  margin-bottom: 8px;
+  color: #F09035;
+} 
+
+.ingredient__body .item-count {
+  width: 6.953125vw;
+  height: 2.24956vw;
+  margin-right: 1.015625vw;
+  line-height: 1.12478vw;
+  font-family: var(--font-regular);
+}
+
+@media only screen and (max-width: 480px) {
+  .ingredient {
+    width: 91.466666667vw;
+    height: 88px;
+  }
+
+  .ingredient__body .item-count {
+    width: 89px;
+    height: 32px;
+    margin-right: 8px;
+  }
+
+  .ingredient__line {
+    width: 91.466666667vw;
+  }
+
+  .ingredient__name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .ingredient__price {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

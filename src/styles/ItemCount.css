@@ -1,0 +1,43 @@
+.item-count {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  font-size: 1.09375vw;;
+  text-align: center;
+  color: var(--color-fonts1);
+
+  border: 1px solid #F09035;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.minus-icon {
+  width: 1.875vw;
+  height: 1.875vw;
+}
+
+.add-icon {
+  width: 1.875vw;
+  height: 1.875vw;
+
+  color: var(--color-red-deliverize);
+}
+
+@media only screen and (max-width: 480px) {
+  .item-count {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .minus-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .add-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
